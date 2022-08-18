@@ -40,6 +40,7 @@ module.exports = function (config) {
           systemvars: true,
           safe: true,
           defaults: true,
+          allowEmptyValues: true,
         }),
       ],
     },
