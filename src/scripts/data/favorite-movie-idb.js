@@ -21,6 +21,8 @@ const FavoriteMovieIdb = {
     return (await dbPromise).getAll(OBJECT_STORE_NAME);
   },
   async putMovie(movie) {
+    console.log('IDB: ', process.env.API_KEY_TMDB);
+    console.log('IDB: ', process.env.API_KEY_TMDB.length);
     if (!movie.hasOwnProperty('id')) {
       return;
     }
