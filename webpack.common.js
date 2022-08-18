@@ -44,6 +44,7 @@ module.exports = {
       path: path.resolve(__dirname, '.env'),
       systemvars: true,
       safe: true,
+      defaults: true,
     }),
   ],
 };
