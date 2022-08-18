@@ -39,8 +39,6 @@ module.exports = function (config) {
           path: path.resolve(__dirname, '.env'),
           systemvars: true,
           safe: true,
-          defaults: true,
-          allowEmptyValues: true,
         }),
       ],
     },
