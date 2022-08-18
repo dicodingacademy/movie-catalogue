@@ -38,6 +38,7 @@ module.exports = function (config) {
         new Dotenv({
           path: path.resolve(__dirname, '.env'),
           systemvars: true,
+          safe: true,
         }),
       ],
     },
