@@ -27,4 +27,6 @@ window.addEventListener('load', async () => {
     subscribeButton: document.querySelector('#subscribePushNotification'),
     unsubscribeButton: document.querySelector('#unsubscribePushNotification'),
   });
+
+  console.log('process.env.API_KEY_TMDB:', process.env.API_KEY_TMDB);
 });
