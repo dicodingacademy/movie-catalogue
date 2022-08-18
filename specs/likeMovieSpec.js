@@ -11,6 +11,8 @@ describe('Liking A Movie', () => {
   });
 
   it('should show the like button when the movie has not been liked before', async () => {
+    console.log('likeMovieSpec:', process.env.API_KEY_TMDB);
+    console.log('likeMovieSpec:', process.env.API_KEY_TMDB.length);
     await TestFactories.createLikeButtonPresenterWithMovie({ id: 1 });
 
     expect(document.querySelector('[aria-label="like this movie"]'))
