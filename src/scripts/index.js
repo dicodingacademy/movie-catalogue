@@ -20,7 +20,6 @@ window.addEventListener('hashchange', () => {
 window.addEventListener('load', async () => {
   app.renderPage();
   await swRegister();
-  WebSocketInitiator.init(CONFIG.WEB_SOCKET_SERVER);
 
   // Initialize footer tools
   FooterToolsInitiator.init({
